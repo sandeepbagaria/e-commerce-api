@@ -25,6 +25,7 @@
         README.md
 
 > `src/index.js` is the entry point
+> Set environment variables in 'e-commerce/config/dev.env' file
 
 ## Available Scripts
 
