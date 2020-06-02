@@ -1,6 +1,6 @@
 ## Folder Structure
 
->e-commerce/
+> e-commerce/
     config/
         dev.env
         test.env
