@@ -26,7 +26,14 @@
 
 > `src/index.js` is the entry point
 
-> Set environment variables in 'e-commerce/config/dev.env' file
+> Set environment variables in `e-commerce/config/dev.env` file as mentioned in the folder structure above.
+
+> Environment variables is sensitive data and should not be exposed, but as it is currently working on local machine, I am showing what environment variables need to be set below.
+PORT=3000
+
+MONGODB_URL=mongodb://127.0.0.1:27017/e-commerce-api
+
+JWT_SECRET_KEY=thisisnodejscourse
 
 ## Available Scripts
 
