@@ -3,6 +3,9 @@ const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
+//Cart model in Users:-
+// orders where isProcessed is false are only counted in cart
+// And orders where isProcessed is true are past orders
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -56,6 +59,32 @@ const userSchema = new mongoose.Schema({
         isProcessed: {
             type: Boolean,
             default: false
+        },
+        name: {
+            type: String
+        }
+    }],
+    processedOrder: [{
+        totalPrice: {
+            type: Number
+        },
+        totalQuantity: {
+            type: Number
+        },
+        products: {
+            type: Array
+        },
+        name: {
+            type: String
+        },
+        address: {
+            type: String
+        },
+        city:{
+            type: String
+        },
+        pinCode: {
+            type: String
         }
     }]
 

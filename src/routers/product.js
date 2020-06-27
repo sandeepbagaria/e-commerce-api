@@ -32,6 +32,15 @@ router.get('/api/products', async (req, res) => {
     }
 })
 
+router.get('/api/products/:id', async (req, res) => {
+    try {
+        const product = await Product.findById(req.params.id)
+        res.send(product)
+    } catch (e) {
+        res.status(500).send(e)
+    }
+})
+
 // update product by Id
 router.patch('/api/products/:id', async (req, res) => {
 
