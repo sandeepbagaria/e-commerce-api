@@ -63,7 +63,7 @@ Use `POSTMAN` as API client to create and save http requests and also to read th
 Use `mongoDB` for database, run `/mongodb/bin/mongod.exe` to set mongoDB server first with correct --dbpath.
 Use `Robo-3T` or `mongoDB-compass` for better UI of datatbase as a client.
 ```
-## Request URLs from POSTMAN
+## Request URLs
 >Base URL
 
 http://localhost:3001/api/
